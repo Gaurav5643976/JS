@@ -10,3 +10,31 @@ for(let i=0;i<myStates.length;i++){
     console.log(`${i} --> ${myStates[i]}`);
 }
 
+let i=0;
+while(i<myStates.length){
+    if(typeof myStates[i]!=="string"){
+        i++;
+        continue;
+    }
+    console.log(`${i}--> ${myStates[i]}`);
+    i++;
+}
+
+myStates.forEach((s)=>(console.log(s)));
+
+
+for(const states of myStates){
+    console.log(states);
+}
+
+const symbols ={
+    yt:"Youtube",
+    ig:"Instagram",
+    fb:"Facebook"
+};
+for(const site in symbols){
+    console.log(site);
+}
+
+
+
